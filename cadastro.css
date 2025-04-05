@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    padding: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    line-height: 50px;
+    background: linear-gradient(to left, #d34107, #ee11d0); 
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: #080301;
+    border-radius: 20px;
+}
+.form-container {
+    border : 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    background: linear-gradient(to right, #d34107, #ee11d0); 
+}
+
+button {
+    color: red;  
+    border-radius: 20px;
+    border-color: rgb(253, 253, 253);
+}
