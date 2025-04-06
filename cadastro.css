@@ -1,31 +1,64 @@
+/* Estilo do corpo da página */
 body {
-    font-family: Arial;
-    padding: 250px;
-    display: flex;
-    justify-content: center;
+    font-family: Arial; 
+    padding: 250px; 
+    display: flex; 
+    justify-content: center; 
     text-align: center;
-    align-content: center;
-    line-height: 50px;
+    align-content: center; 
+    line-height: 50px; 
     background: linear-gradient(to left, #d34107, #ee11d0); 
 }
+
+/* Estilo dos campos de entrada */
 input {
-    display: block;
+    display: block; 
     margin: 10px 0;
-    padding: 10px;
-    border: #080301;
-    border-radius: 20px;
-}
-.form-container {
-    border : 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 200px;
-    background: linear-gradient(to right, #d34107, #ee11d0); 
+    padding: 10px; 
+    border: 1px solid #080301; 
+    border-radius: 20px; 
+
 }
 
+/* Estilo do contêiner do formulário */
+.form-container {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 200px; 
+    background: linear-gradient(to right, #d34107, #ee11d0);
+}
+
+/* Estilo dos botões */
 button {
-    color: red;  
-    border-radius: 20px;
-    border-color: rgb(253, 253, 253);
+    color: red; 
+    border-radius: 20px; 
+    border: 1px solid rgb(253, 253, 253); 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: rgba(255, 0, 0, 0.1); 
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) { /* Para telas menores que 768px */
+    body {
+        padding: 50px; /* Reduz o preenchimento do corpo */
+    }
+
+    .form-container {
+        width: 90%; /* Largura do contêiner ajustada para 90% da tela */
+    }
+
+    input {
+        padding: 8px; /* Ajusta o preenchimento dos campos de entrada */
+    }
+
+    button {
+        padding: 10px; /* Ajusta o preenchimento do botão */
+    }
 }
