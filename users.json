@@ -33,5 +33,35 @@
     "name": "joao",
     "email": "joao1@email",
     "password": "1234"
+  },
+  {
+    "name": "joao",
+    "email": "sla1",
+    "password": "123"
+  },
+  {
+    "name": "joao",
+    "email": "joao",
+    "password": "kpoaso"
+  },
+  {
+    "name": "joao",
+    "email": "joao1@email.com",
+    "password": "123425"
+  },
+  {
+    "name": "joao",
+    "email": "joao1@email.com.br",
+    "password": "124569"
+  },
+  {
+    "name": "joao",
+    "email": "joao1@email.com.",
+    "password": "123425"
+  },
+  {
+    "name": "joao",
+    "email": "joao1@email.com.br.",
+    "password": "123436"
   }
 ]
