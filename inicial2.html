@@ -1,37 +1,43 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicial2.css">
-    <title>TechMaster</title> 
+    <title>TechMaster</title>
+</head>
 <body>
-  <header> <!-- Cabeçalho da página -->
-    <h1>TechMaster</h1> 
-    <p>Soluções em Informática e Tecnologia</p> 
-  </header>
+    <header> <!-- Cabeçalho da página -->
+        <h1>TechMaster</h1>
+        <h1>Bem-vindo, <span id="username"></span>!</h1>
+        <p>Soluções em Informática e Tecnologia</p>
+        <div id="mensagemBoasVindas" style="display: none;"></div> <!-- Mensagem de boas-vindas -->
+    </header>
 
-  <nav> <!-- Navegação da página -->
-    <a href="#">Início</a> 
-    <a href="#">Produtos</a> 
-    <a href="#">Serviços</a> 
-    <a href="#">Contato</a> 
-  </nav>
+    <nav> <!-- Navegação da página -->
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </nav>
 
-  <div class="banner"> <!-- Divisão para o banner -->
-    <div class="banner-texto"> 
-      <h2>Tudo em tecnologia num só lugar</h2> 
-      <a href="#" class="botao">Ver Produtos</a> 
+    <div class="banner"> <!-- Divisão para o banner -->
+        <div class="banner-texto">
+            <h2>Tudo em tecnologia num só lugar</h2>
+            <a href="#" class="botao">Ver Produtos</a>
+        </div>
     </div>
-  </div>
 
-  <section class="conteudo"> <!-- Seção principal de conteúdo -->
-    <h2>Bem-vindo à TechMaster</h2> 
-    <p>Na TechMaster, você encontra computadores, notebooks, acessórios, periféricos e tudo mais para turbinar sua experiência digital.</p> 
-  </section>
+    <section class="conteudo"> <!-- Seção principal de conteúdo -->
+        <h2>Bem-vindo à TechMaster</h2>
+        <p>Na TechMaster, você encontra computadores, notebooks, acessórios, periféricos e tudo mais para turbinar sua experiência digital.</p>
+    </section>
 
-  <footer> <!-- Rodapé da página -->
-    &copy; 2025 TechMaster. Todos os direitos reservados. 
-  </footer>
+    <footer> <!-- Rodapé da página -->
+        &copy; 2025 TechMaster. Todos os direitos reservados.
+        <button id="botaoSair" style="display: none;">Sair</button> <!-- Botão Sair -->
+    </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

@@ -9,11 +9,7 @@ function saveUsers(users) {
 
 function isValidEmail(email) {    
   // Verifica se o email contém "@" e "."
-  if (email.includes('@') && email.includes('.')) {
-      return true; // Email válido
-  } else {
-      return false; // Email inválido
-  }
+  return email.includes('@') && email.includes('.'); // Email válido
 }
 
 function navigateToNextScreen() {
@@ -59,6 +55,7 @@ function register() {
   // Muda de tela apenas se tudo estiver correto
   navigateToNextScreen();
 }
+
 function login() {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
@@ -74,10 +71,22 @@ function login() {
 
   // Verifica se o usuário foi encontrado
   if (user) {
+      localStorage.setItem('usuario', user.name); // Armazena o nome do usuário no localStorage
       alert(`Bem-vindo, ${user.name}!`);
       window.location.href = 'inicial2.html'; // Redireciona para a página inicial se as credenciais estiverem corretas
   } else {
       alert("Email ou senha inválidos!"); // Mensagem de erro se as credenciais estiverem incorretas
+  }
+}
+
+function displayWelcomeMessage() {
+  const userName = localStorage.getItem('usuario');
+  if (userName) {
+      document.getElementById("username").innerText = userName; // Atualiza o elemento com o nome do usuário
+      document.getElementById("botaoSair").style.display = "block"; // Exibe o botão "Sair"
+  } else {
+      document.getElementById("username").innerText = 'Visitante'; // Exibe 'Visitante' se não houver usuário logado
+      document.getElementById("botaoSair").style.display = "none"; // Esconde o botão "Sair"
   }
 }
 
@@ -93,3 +102,20 @@ function downloadUsers() {
 
   URL.revokeObjectURL(url);
 }
+
+// Função para sair do usuário
+function logout() {
+  localStorage.removeItem('usuario'); // Remove o nome do usuário do localStorage
+  alert("Você saiu com sucesso!");
+  window.location.href = 'login.html'; // Redireciona para a página de login
+}
+
+// Chama a função para exibir a mensagem de boas-vindas ao carregar a página inicial
+window.onload = function() {
+  if (window.location.pathname.includes('inicial2.html')) {
+      displayWelcomeMessage();
+  }
+
+  // Adiciona o evento de clique ao botão "Sair"
+  document.getElementById("botaoSair").addEventListener("click", logout);
+};

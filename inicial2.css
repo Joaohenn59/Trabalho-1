@@ -118,6 +118,20 @@ nav a:hover {
   background-color: #0d47a1; 
 }
 
+button {
+  display: inline-block; /* Inline block for button style */
+  padding: 10px 20px; /* Padding inside the button */
+  margin-top: 10px; /* Space above button */
+  background-color: #e0e0e0; /* Light gray background */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  color: #ff0000; /* Red text color */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s;
+  margin-left: 1800px;
+  display: block;
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 768px) { /* Para telas menores que 768px */
   header h1 {

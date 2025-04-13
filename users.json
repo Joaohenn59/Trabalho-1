@@ -1,67 +1,17 @@
 [
   {
-    "name": "takai",
-    "email": "takai@gmail.com",
-    "password": "1234"
-  },
-  {
-    "name": "gabriel takai",
-    "email": "takaigabriel@gmail.com",
-    "password": "takai1234"
-  },
-  {
-    "name": "joao",
-    "email": "joao@email",
-    "password": "1234"
-  },
-  {
-    "name": "joao",
-    "email": "sla@email",
-    "password": "123"
-  },
-  {
-    "name": "diewgo",
-    "email": "jj@email",
-    "password": "123"
-  },
-  {
     "name": "joao",
     "email": "joao@email.com",
     "password": "kpoaso"
   },
   {
-    "name": "joao",
-    "email": "joao1@email",
-    "password": "1234"
+    "name": "maria",
+    "email": "maria@email.com",
+    "password": "senha123"
   },
   {
     "name": "joao",
-    "email": "sla1",
-    "password": "123"
-  },
-  {
-    "name": "joao",
-    "email": "joao",
-    "password": "kpoaso"
-  },
-  {
-    "name": "joao",
-    "email": "joao1@email.com",
-    "password": "123425"
-  },
-  {
-    "name": "joao",
-    "email": "joao1@email.com.br",
-    "password": "124569"
-  },
-  {
-    "name": "joao",
-    "email": "joao1@email.com.",
-    "password": "123425"
-  },
-  {
-    "name": "joao",
-    "email": "joao1@email.com.br.",
-    "password": "123436"
+    "email": "joao1@email.",
+    "password": "123456"
   }
 ]
