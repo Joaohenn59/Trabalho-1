@@ -41,6 +41,10 @@ function register() {
 
   if (users.some(user => user.email === email)) {
       alert("E-mail já cadastrado!");
+      // Redirecionar após o alerta
+      setTimeout(() => {
+          window.location.href = "http://127.0.0.1:5500/login.html"; 
+      }, 2000); // 2000 milissegundos = 2 segundos
       return;
   }
 
@@ -48,12 +52,12 @@ function register() {
   saveUsers(users);
 
   alert("Cadastro realizado com sucesso!");
+  window.location.href = "http://127.0.0.1:5500/login.html"; 
+
+  // Limpar os campos (opcional, pois a página será redirecionada)
   document.getElementById("registerName").value = "";
   document.getElementById("registerEmail").value = "";
   document.getElementById("registerPassword").value = "";
-
-  // Muda de tela apenas se tudo estiver correto
-  navigateToNextScreen();
 }
 
 function login() {
@@ -65,7 +69,6 @@ function login() {
       alert("Preencha todos os campos!");
       return; // Sai da função se algum campo estiver vazio
   }
-
   const users = getUsers(); // Obtém a lista de usuários armazenados
   const user = users.find(u => u.email === email && u.password === password); // Busca o usuário correspondente
 
@@ -107,7 +110,7 @@ function downloadUsers() {
 function logout() {
   localStorage.removeItem('usuario'); // Remove o nome do usuário do localStorage
   alert("Você saiu com sucesso!");
-  window.location.href = 'login.html'; // Redireciona para a página de login
+  window.location.href = 'http://127.0.0.1:5500/inicial.html'; // Redireciona para a página de login
 }
 
 // Chama a função para exibir a mensagem de boas-vindas ao carregar a página inicial

@@ -119,14 +119,13 @@ nav a:hover {
 }
 
 button {
-  display: inline-block; /* Inline block for button style */
-  padding: 10px 20px; /* Padding inside the button */
-  margin-top: 10px; /* Space above button */
-  background-color: #e0e0e0; /* Light gray background */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  color: #ff0000; /* Red text color */
-  text-decoration: none; /* No underline */
+  display: inline-block; 
+  padding: 10px 20px; 
+  margin-top: 10px; 
+  background-color: #e0e0e0; 
+  border: none; 
+  border-radius: 5px; 
+  color: #ff0000; 
   transition: background-color 0.3s;
   margin-left: 1800px;
   display: block;

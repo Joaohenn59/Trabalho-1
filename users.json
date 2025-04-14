@@ -23,5 +23,30 @@
     "name": "joao",
     "email": "sla@email.",
     "password": "123456"
+  },
+  {
+    "name": "joao",
+    "email": "joao01@email.com.br",
+    "password": "123456"
+  },
+  {
+    "name": "henn",
+    "email": "henn@email.com",
+    "password": "123456"
+  },
+  {
+    "name": "joao",
+    "email": "henn1@email.com",
+    "password": "123456"
+  },
+  {
+    "name": "henn",
+    "email": "henn2@email.com",
+    "password": "123456"
+  },
+  {
+    "name": "joao",
+    "email": "henn@email.br",
+    "password": "123456"
   }
 ]
