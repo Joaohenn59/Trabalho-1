@@ -7,14 +7,16 @@ function saveUsers(users) {
   localStorage.setItem("users", JSON.stringify(users));
 }
 
+
+
 function isValidEmail(email) {    
   // Verifica se o email contém "@" e "."
-  return email.includes('@') && email.includes('.'); // Email válido
+  return email.includes('@') && email.includes('.'); 
 }
 
 function navigateToNextScreen() {
   // Redireciona para a próxima página
-  window.location.href = "http://127.0.0.1:5500/login.html"; // Substitua pelo caminho da sua próxima tela
+  window.location.href = "http://127.0.0.1:5500/login.html"; 
 }
 
 function register() {
@@ -74,7 +76,7 @@ function login() {
 
   // Verifica se o usuário foi encontrado
   if (user) {
-      localStorage.setItem('usuario', user.name); // Armazena o nome do usuário no localStorage
+      localStorage.setItem('usuario', user.name); 
       alert(`Bem-vindo, ${user.name}!`);
       window.location.href = 'inicial2.html'; // Redireciona para a página inicial se as credenciais estiverem corretas
   } else {
@@ -95,8 +97,8 @@ function displayWelcomeMessage() {
 
 function downloadUsers() {
   const users = getUsers();
-  const blob = new Blob([JSON.stringify(users, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
+  const blob = new Blob([JSON.stringify(users, null, 2)], { type: "application/json" });// Utiliza JSON.stringify para converter o objeto de usuários em uma string JSON
+  const url = URL.createObjectURL(blob);//Blob (Binary Large Object) um objeto que representa dados binários de forma imutável usado para não textos
 
   const a = document.createElement("a");
   a.href = url;
@@ -110,7 +112,7 @@ function downloadUsers() {
 function logout() {
   localStorage.removeItem('usuario'); // Remove o nome do usuário do localStorage
   alert("Você saiu com sucesso!");
-  window.location.href = 'http://127.0.0.1:5500/inicial.html'; // Redireciona para a página de login
+  window.location.href = 'http://127.0.0.1:5500/inicial.html'; 
 }
 
 // Chama a função para exibir a mensagem de boas-vindas ao carregar a página inicial
@@ -122,3 +124,24 @@ window.onload = function() {
   // Adiciona o evento de clique ao botão "Sair"
   document.getElementById("botaoSair").addEventListener("click", logout);
 };
+
+function excluir() {
+  const userName = localStorage.getItem('usuario'); // Obtém o nome do usuário logado
+  if (!userName) {
+      alert("Nenhum usuário logado.");
+      return;
+  }
+
+  let users = getUsers(); // Obtém a lista de usuários armazenados
+  const updatedUsers = users.filter(user => user.name !== userName); // Filtra a lista para remover o usuário logado
+
+  if (users.length === updatedUsers.length) {
+      alert("Usuário não encontrado.");
+  } else {
+      saveUsers(updatedUsers); // Salva a lista atualizada de usuários
+      localStorage.removeItem('usuario'); 
+      alert("Usuário excluído com sucesso!");
+      window.location.href = 'http://127.0.0.1:5500/inicial.html'; 
+  }
+}
+  

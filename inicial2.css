@@ -50,7 +50,6 @@ nav a:hover {
 /* Estilo do banner */
 .banner {
   position: relative; 
-  background: url('https://via.placeholder.com/1400x400?text=TechMaster+-+Tecnologia+Para+Você') no-repeat center center/cover; /* Imagem de fundo do banner */
   height: 400px; 
 }
 
@@ -71,7 +70,7 @@ nav a:hover {
   transform: translate(-50%, -50%); 
   color: white; 
   text-align: center; 
-  z-index: 1;
+  z-index: 1;/* Este elemento está atrás da .banner-texto */
 }
 
 /* Estilo do título no banner */
@@ -134,7 +133,7 @@ nav a:hover {
 .excluir {
   display: inline-block; 
   padding: 10px 20px; 
-  margin-top: 10px; 
+  margin-top: 0px; 
   background-color: #e0e0e0; 
   border: none; 
   border-radius: 5px; 
@@ -149,7 +148,7 @@ nav a:hover {
 @media (max-width: 768px) { /* Para telas menores que 768px */
   header h1 {
     font-size: 2em; /* Reduz o tamanho do título no cabeçalho */
-  }
+  }/* 2em = 2 * 16px = 32px */
 
   .banner-texto h2 {
     font-size: 2em; /* Reduz o tamanho do título no banner */

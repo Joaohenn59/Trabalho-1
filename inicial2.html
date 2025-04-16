@@ -11,6 +11,7 @@
         <h1>TechMaster</h1>
         <h1>Bem-vindo, <span id="username"></span>!</h1>
         <p>Soluções em Informática e Tecnologia</p>
+        <button class="sair" id="botaoSair" style="display: none;">Sair</button>
         <div id="mensagemBoasVindas" style="display: none;"></div> <!-- Mensagem de boas-vindas -->
     </header>
     
@@ -28,9 +29,9 @@
 
     <footer> <!-- Rodapé da página -->
         &copy; 2025 TechMaster. Todos os direitos reservados.
-        <button class="sair" id="botaoSair" style="display: none;">Sair</button>
-        <button class="excluir" id="excluir" onclick="deleteUser()"></button>
-    </footer>
+        
+        <button class="excluir" onclick="excluir()">Excluir</button>
+        
 
     <script src="main.js"></script>
 </body>

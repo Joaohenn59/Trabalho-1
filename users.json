@@ -1,32 +1,12 @@
 [
   {
-    "name": "joao",
-    "email": "joao@email.com",
-    "password": "kpoaso"
-  },
-  {
     "name": "maria",
     "email": "maria@email.com",
     "password": "senha123"
   },
   {
-    "name": "joao",
-    "email": "joao1@email.",
-    "password": "123456"
-  },
-  {
     "name": "takai",
     "email": "joao@email.com.",
-    "password": "123456"
-  },
-  {
-    "name": "joao",
-    "email": "sla@email.",
-    "password": "123456"
-  },
-  {
-    "name": "joao",
-    "email": "joao01@email.com.br",
     "password": "123456"
   },
   {
@@ -35,23 +15,8 @@
     "password": "123456"
   },
   {
-    "name": "joao",
-    "email": "henn1@email.com",
-    "password": "123456"
-  },
-  {
     "name": "henn",
     "email": "henn2@email.com",
-    "password": "123456"
-  },
-  {
-    "name": "joao",
-    "email": "henn@email.br",
-    "password": "123456"
-  },
-  {
-    "name": "joao",
-    "email": "jao@.",
     "password": "123456"
   }
 ]
