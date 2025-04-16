@@ -5,11 +5,6 @@
     "password": "senha123"
   },
   {
-    "name": "takai",
-    "email": "joao@email.com.",
-    "password": "123456"
-  },
-  {
     "name": "henn",
     "email": "henn@email.com",
     "password": "123456"
@@ -17,6 +12,11 @@
   {
     "name": "henn",
     "email": "henn2@email.com",
+    "password": "123456"
+  },
+  {
+    "name": "joao",
+    "email": "joa@emial.com",
     "password": "123456"
   }
 ]
