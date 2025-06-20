@@ -7,16 +7,14 @@ function saveUsers(users) {
   localStorage.setItem("users", JSON.stringify(users));
 }
 
-
-
-function isValidEmail(email) {    
+function isValidEmail(email) {
   // Verifica se o email contém "@" e "."
-  return email.includes('@') && email.includes('.'); 
+  return email.includes('@') && email.includes('.');
 }
 
 function navigateToNextScreen() {
   // Redireciona para a próxima página
-  window.location.href = "http://127.0.0.1:5500/login.html"; 
+  window.location.href = "../pages/login.html";
 }
 
 function register() {
@@ -45,7 +43,7 @@ function register() {
       alert("E-mail já cadastrado!");
       // Redirecionar após o alerta
       setTimeout(() => {
-          window.location.href = "http://127.0.0.1:5500/login.html"; 
+          window.location.href = "../pages/login.html";
       }, 2000); // 2000 milissegundos = 2 segundos
       return;
   }
@@ -54,7 +52,7 @@ function register() {
   saveUsers(users);
 
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "http://127.0.0.1:5500/login.html"; 
+  window.location.href = "../pages/login.html";
 
   // Limpar os campos (opcional, pois a página será redirecionada)
   document.getElementById("registerName").value = "";
@@ -76,9 +74,9 @@ function login() {
 
   // Verifica se o usuário foi encontrado
   if (user) {
-      localStorage.setItem('usuario', user.name); 
+      localStorage.setItem('usuario', user.name);
       alert(`Bem-vindo, ${user.name}!`);
-      window.location.href = 'inicial2.html'; // Redireciona para a página inicial se as credenciais estiverem corretas
+      window.location.href = '../pages/inicial2.html'; // Redireciona para a página inicial se as credenciais estiverem corretas
   } else {
       alert("Email ou senha inválidos!"); // Mensagem de erro se as credenciais estiverem incorretas
   }
@@ -112,12 +110,12 @@ function downloadUsers() {
 function logout() {
   localStorage.removeItem('usuario'); // Remove o nome do usuário do localStorage
   alert("Você saiu com sucesso!");
-  window.location.href = 'http://127.0.0.1:5500/inicial.html'; 
+  window.location.href = '../index.html';
 }
 
 // Chama a função para exibir a mensagem de boas-vindas ao carregar a página inicial
 window.onload = function() {
-  if (window.location.pathname.includes('inicial2.html')) {
+  if (window.location.pathname.includes('../pages/inicial2.html')) {
       displayWelcomeMessage();
   }
 
@@ -139,9 +137,8 @@ function excluir() {
       alert("Usuário não encontrado.");
   } else {
       saveUsers(updatedUsers); // Salva a lista atualizada de usuários
-      localStorage.removeItem('usuario'); 
+      localStorage.removeItem('usuario');
       alert("Usuário excluído com sucesso!");
-      window.location.href = 'http://127.0.0.1:5500/inicial.html'; 
+      window.location.href = '../index.html';
   }
 }
-  
