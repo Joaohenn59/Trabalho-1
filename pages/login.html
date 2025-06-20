@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"> 
   <title>Cadastro e Login</title> 
-  <link rel="stylesheet" href="login.css"> 
+  <link rel="stylesheet" href="../css/login.css"> 
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <input type="email" id="loginEmail" placeholder="Email"> 
     <input type="password" id="loginPassword" placeholder="Senha"> 
     <button onclick="login()">Entrar</button> 
-    <a href="cadastro.html"><button>cadastrar</button></a> <!-- Link para a página de cadastro com um botão -->
+    <a href="./cadastro.html"><button>cadastrar</button></a> <!-- Link para a página de cadastro com um botão -->
   </div> 
 
   <!-- Container para a funcionalidade de exportar usuários -->
@@ -22,6 +22,6 @@
     <button onclick="downloadUsers()">Baixar users.json</button> <!-- Botão que chama a função para baixar a lista de usuários -->
   </div>
 
-  <script src="main.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica da aplicação -->
+  <script src="../js/main.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica da aplicação -->
 </body>
 </html>
