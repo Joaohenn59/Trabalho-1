@@ -1,143 +1,146 @@
 /* Reset básico para remover margens e preenchimentos padrão */
 * {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilo do corpo da página */
 body {
-  font-family: Arial; 
-  background-color: #f5f7fa; 
-  color: #333; 
+  font-family: Arial;
+  background-color: #f5f7fa;
+  color: #333;
 }
 
 /* Estilo do cabeçalho */
 header {
-  background-color: #1e88e5; 
-  color: white; 
+  background-color: #1e88e5;
+  color: white;
   padding: 40px 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 /* Estilo do título no cabeçalho */
 header h1 {
-  font-size: 2.5em; 
-  margin-bottom: 10px; 
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 /* Estilo da navegação */
 nav {
   background-color: #1565c0;
-  display: flex; 
-  justify-content: center; 
-  padding: 15px 0; 
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 }
 
 /* Estilo dos links na navegação */
 nav a {
-  color: white; 
-  text-decoration: none; 
-  font-weight: bold; 
-  transition: color 0.3s; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 /* Efeito hover para os links da navegação */
 nav a:hover {
-  color: #bbdefb; 
+  color: #bbdefb;
 }
 
 /* Estilo do banner */
 .banner {
-  position: relative; 
-  height: 400px; 
+  position: relative;
+  height: 400px;
 }
 
 /* Camada escura sobre o banner */
 .banner::after {
-  content: ""; 
-  position: absolute; 
-  top: 0; left: 0; 
-  width: 100%; height: 100%; 
-  background-color: rgba(0, 0, 0, 0.5); 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo do texto no banner */
 .banner-texto {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
-  text-align: center; 
-  z-index: 1;/* Este elemento está atrás da .banner-texto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  /* Este elemento está atrás da .banner-texto */
 }
 
 /* Estilo do título no banner */
 .banner-texto h2 {
-  font-size: 2.5em; 
-  margin-bottom: 10px; 
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 /* Estilo da seção de conteúdo */
 .conteudo {
-  padding: 60px 20px; 
-  text-align: center; 
-  max-width: 800px; 
-  margin: 0 auto; 
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Estilo do título na seção de conteúdo */
 .conteudo h2 {
-  font-size: 2em; 
-  margin-bottom: 20px; 
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 /* Estilo do parágrafo na seção de conteúdo */
 .conteudo p {
-  font-size: 1.1em; 
-  line-height: 1.6; 
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 /* Estilo do botão */
 .botao {
-  margin-top: 25px; 
-  padding: 12px 25px; 
-  background-color: #1e88e5; 
-  color: white; 
-  text-decoration: none; 
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #1e88e5;
+  color: white;
+  text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s; 
-  display: inline-block; 
+  transition: background-color 0.3s;
+  display: inline-block;
 }
 
 /* Efeito hover para o botão */
 .botao:hover {
-  background-color: #0d47a1; 
+  background-color: #0d47a1;
 }
 
 .sair {
-  display: inline-block; 
-  padding: 10px 20px; 
-  margin-top: 10px; 
-  background-color: #e0e0e0; 
-  border: none; 
-  border-radius: 5px; 
-  color: #ff0000; 
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  color: #ff0000;
   transition: background-color 0.3s;
   margin-left: 1800px;
   display: block;
 }
 
 .excluir {
-  display: inline-block; 
-  padding: 10px 20px; 
-  margin-top: 0px; 
-  background-color: #e0e0e0; 
-  border: none; 
-  border-radius: 5px; 
-  color: #ff0000; 
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 0px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  color: #ff0000;
   transition: background-color 0.3s;
   margin-left: 1800px;
   display: block;
@@ -145,24 +148,33 @@ nav a:hover {
 
 
 /* Media Queries para responsividade */
-@media (max-width: 768px) { /* Para telas menores que 768px */
+@media (max-width: 768px) {
+
+  /* Para telas menores que 768px */
   header h1 {
-    font-size: 2em; /* Reduz o tamanho do título no cabeçalho */
-  }/* 2em = 2 * 16px = 32px */
+    font-size: 2em;
+    /* Reduz o tamanho do título no cabeçalho */
+  }
+
+  /* 2em = 2 * 16px = 32px */
 
   .banner-texto h2 {
-    font-size: 2em; /* Reduz o tamanho do título no banner */
+    font-size: 2em;
+    /* Reduz o tamanho do título no banner */
   }
 
   .conteudo h2 {
-    font-size: 1.5em; /* Reduz o tamanho do título na seção de conteúdo */
+    font-size: 1.5em;
+    /* Reduz o tamanho do título na seção de conteúdo */
   }
 
   .conteudo p {
-    font-size: 1em; /* Reduz o tamanho do parágrafo na seção de conteúdo */
+    font-size: 1em;
+    /* Reduz o tamanho do parágrafo na seção de conteúdo */
   }
 
   .botao {
-    padding: 10px 20px; /* Ajusta o preenchimento do botão */
+    padding: 10px 20px;
+    /* Ajusta o preenchimento do botão */
   }
 }
